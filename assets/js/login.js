@@ -50,7 +50,7 @@
     const iconMoon    = document.getElementById('iconMoon');
     const savedTheme  = localStorage.getItem('theme') || 'light';
 
-    document.documentElement.setAttribute('data-theme', savedTheme);
+    document.documentElement.setAttribute('data-theme', 'light');
     _syncIconsTema(savedTheme);
 
     themeToggle?.addEventListener('click', () => {
