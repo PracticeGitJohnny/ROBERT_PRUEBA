@@ -686,11 +686,11 @@ window.ClinicalModule = (function () {
                 <div class="eye-section-body">
                     <div class="eye-field form-group">
                         <label class="form-label">Esfera</label>
-                        <input id="eOdEsf" class="form-input" type="number" step="0.25" inputmode="decimal" value="${v('od_esfera')}" placeholder="+0.00">
+                        <input id="eOdEsf" class="form-input" type="text" inputmode="decimal" pattern="[+-]?[0-9]*\.?[0-9]*" value="${v('od_esfera')}" placeholder="+0.00">
                     </div>
                     <div class="eye-field form-group">
                         <label class="form-label">Cilindro</label>
-                        <input id="eOdCil" class="form-input" type="number" step="0.25" inputmode="decimal" value="${v('od_cilindro')}" placeholder="0.00">
+                        <input id="eOdCil" class="form-input" type="text" inputmode="decimal" pattern="[+-]?[0-9]*\.?[0-9]*" value="${v('od_cilindro')}" placeholder="0.00">
                     </div>
                     <div class="eye-field form-group">
                         <label class="form-label">Eje (°)</label>
@@ -712,11 +712,11 @@ window.ClinicalModule = (function () {
                 <div class="eye-section-body">
                     <div class="eye-field form-group">
                         <label class="form-label">Esfera</label>
-                        <input id="eOiEsf" class="form-input" type="number" step="0.25" inputmode="decimal" value="${v('oi_esfera')}" placeholder="+0.00">
+                        <input id="eOiEsf" class="form-input" type="text" inputmode="decimal" pattern="[+-]?[0-9]*\.?[0-9]*" value="${v('oi_esfera')}" placeholder="+0.00">
                     </div>
                     <div class="eye-field form-group">
                         <label class="form-label">Cilindro</label>
-                        <input id="eOiCil" class="form-input" type="number" step="0.25" inputmode="decimal" value="${v('oi_cilindro')}" placeholder="0.00">
+                        <input id="eOiCil" class="form-input" type="text" inputmode="decimal" pattern="[+-]?[0-9]*\.?[0-9]*" value="${v('oi_cilindro')}" placeholder="0.00">
                     </div>
                     <div class="eye-field form-group">
                         <label class="form-label">Eje (°)</label>
@@ -736,11 +736,11 @@ window.ClinicalModule = (function () {
                     <div class="form-grid-2">
                         <div class="form-group">
                             <label class="form-label">DP (mm)</label>
-                            <input id="eDp" class="form-input" type="number" step="0.5" min="50" max="80" inputmode="decimal" value="${v('distancia_pupilar')}" placeholder="64">
+                            <input id="eDp" class="form-input" type="text" inputmode="decimal" pattern="[0-9]*\.?[0-9]*" value="${v('distancia_pupilar')}" placeholder="64">
                         </div>
                         <div class="form-group">
                             <label class="form-label">Adición</label>
-                            <input id="eAdd" class="form-input" type="number" step="0.25" min="0" max="4" inputmode="decimal" value="${v('adicion')}" placeholder="+1.50">
+                            <input id="eAdd" class="form-input" type="text" inputmode="decimal" pattern="[+-]?[0-9]*\.?[0-9]*" value="${v('adicion')}" placeholder="+1.50">
                         </div>
                     </div>
                     <div class="form-group">
